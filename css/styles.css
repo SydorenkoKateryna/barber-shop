@@ -1,0 +1,48 @@
+/* основний колір тексту 555555 */
+/* другий колір тексту 9DA4BD 100% та 60%*/
+
+/* основний колір заголовків 303030*/
+/* другий колір заголовків FFFFFF*/
+
+/* колір акценту FF6C00*/
+
+/* основний колір фону FFFFFF */
+/* другий колір фону F7F7F7 */
+
+:root {
+  --primary-text-color: #555555;
+  --secondary-text-color: #9da4bd;
+  --extra-text-color: #9da4bd99;
+  --primary-title-color: #303030;
+  --secondary-title-color: #ffffff;
+  --accent-color: #ff6c00;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f7f7f7;
+}
+
+body {
+  font-family: open-sans, sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.email-link {
+  text-decoration: underline;
+}
+
+.list {
+  list-style: none;
+}
+
+.site-nav a {
+    color: var(--secondary-title-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
