@@ -1,48 +1,211 @@
-/* основний колір тексту 555555 */
-/* другий колір тексту 9DA4BD 100% та 60%*/
-
-/* основний колір заголовків 303030*/
-/* другий колір заголовків FFFFFF*/
-
-/* колір акценту FF6C00*/
-
-/* основний колір фону FFFFFF */
-/* другий колір фону F7F7F7 */
-
 :root {
   --primary-text-color: #555555;
   --secondary-text-color: #9da4bd;
-  --extra-text-color: #9da4bd99;
+  --extra-text-color: rgba(157, 164, 189, 0.6);
   --primary-title-color: #303030;
-  --secondary-title-color: #ffffff;
   --accent-color: #ff6c00;
-  --primary-background-color: #ffffff;
+  --primary-white-color: #ffffff;
   --secondary-background-color: #f7f7f7;
 }
 
+/* General styles */
 body {
-  font-family: open-sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.02em;
+
   color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
-}
-
-a {
-  text-decoration: none;
-}
-
-.email-link {
-  text-decoration: underline;
+  background-color: var(--primary-white-color);
 }
 
 .list {
   list-style: none;
 }
 
-.site-nav a {
-    color: var(--secondary-title-color);
+.link {
+  text-decoration: none;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-    color: var(--accent-color);
+.button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
+
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* Тимчасовий колір фону для наглядності */
+.header,
+.hero,
+.services {
+  background-color: var(--primary-text-color);
+}
+
+/* Header */
+.header-list-link,
+.header-tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--primary-white-color);
+}
+
+.header-list-link:hover,
+.header-list-link:focus,
+.header-tel-link:hover,
+.header-tel-link:focus,
+.header-button:hover,
+.header-button:focus {
+  color: var(--accent-color);
+}
+
+.header-button {
+  color: var(--primary-white-color);
+
+  background-color: var(--primary-text-color);
+  border-color: var(--accent-color);
+}
+
+/* Hero */
+.hero-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+
+  color: var(--primary-title-color);
+}
+
+.hero-list-link:hover,
+.hero-list-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+
+  color: var(--extra-text-color);
+}
+
+.hero-title {
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+
+  color: var(--primary-white-color);
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+
+  color: var(--secondary-text-color);
+}
+
+/* About */
+.about-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+
+  color: var(--primary-title-color);
+}
+
+.about-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+
+  color: var(--primary-title-color);
+}
+
+.about-after-title {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: calc(26 / 14);
+}
+
+.about-button {
+  color: var(--primary-title-color);
+
+  background-color: var(--primary-white-color);
+  border-color: var(--accent-color);
+}
+
+.about-button:hover,
+.about-button:focus {
+  color: var(--accent-color);
+}
+
+/* Services and Prices */
+.services-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+  
+  color: var(--extra-text-color);
+}
+
+.services-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+
+  color: var(--primary-white-color);
+}
+
+.services-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  
+  color: var(--secondary-text-color);
+}
+
+.services-button {
+  color: var(--primary-white-color);
+
+  background-color: var(--primary-text-color);
+  border-color: var(--accent-color);
+}
+
+.services-button:hover,
+.services-button:focus {
+  color: var(--accent-color);
+}
+
+
+/* Ratings */
+
+/* Barbers */
+
+/* Portfolio */
+
+/* Booking */
+
+/* Contacts */
+
+/* Footer */
