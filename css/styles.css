@@ -328,6 +328,11 @@ body {
   color: var(--secondary-text-color);
 }
 
+.contacts-list-link:hover,
+.contacts-list-link:focus {
+  color: var(--accent-color);
+}
+
 .contacts-link-map {
   font-weight: 700;
 }
