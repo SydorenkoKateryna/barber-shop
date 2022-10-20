@@ -11,7 +11,6 @@
 /* General styles */
 body {
   font-family: "Open Sans", sans-serif;
-  letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
@@ -50,7 +49,9 @@ body {
 /* Тимчасовий колір фону для наглядності */
 .header,
 .hero,
-.services {
+.services,
+.booking,
+.contacts {
   background-color: var(--primary-text-color);
 }
 
@@ -65,6 +66,13 @@ body {
   color: var(--primary-white-color);
 }
 
+.header-button {
+  color: var(--primary-white-color);
+
+  background-color: var(--primary-text-color);
+  border-color: var(--accent-color);
+}
+
 .header-list-link:hover,
 .header-list-link:focus,
 .header-tel-link:hover,
@@ -72,13 +80,6 @@ body {
 .header-button:hover,
 .header-button:focus {
   color: var(--accent-color);
-}
-
-.header-button {
-  color: var(--primary-white-color);
-
-  background-color: var(--primary-text-color);
-  border-color: var(--accent-color);
 }
 
 /* Hero */
@@ -116,6 +117,7 @@ body {
 .hero-text {
   font-size: 18px;
   line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
 
   color: var(--secondary-text-color);
 }
@@ -141,11 +143,13 @@ body {
 .about-after-title {
   font-size: 18px;
   line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
 }
 
 .about-text {
   font-size: 14px;
   line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
 }
 
 .about-button {
@@ -181,6 +185,7 @@ body {
 .services-text {
   font-size: 18px;
   line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
   
   color: var(--secondary-text-color);
 }
@@ -197,15 +202,173 @@ body {
   color: var(--accent-color);
 }
 
-
 /* Ratings */
+.ratings-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+
+.ratings-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  
+  color: var(--primary-title-color);
+  
+}
+
+.ratings-after-title {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+}
+
+.ratings-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  letter-spacing: 0.05em;
+  
+  color: var(--primary-title-color);
+}
+
+.ratings-plus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+   
+  color: var(--accent-color);
+}
+
+.ratings-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-align: center;
+
+  color: var(--primary-title-color);
+
+  width: 122px;
+  height: 30px;
+}
 
 /* Barbers */
+.barbers-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+  
+  color: var(--primary-title-color);
+}
+
+.barbers-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  
+  color: var(--primary-title-color);
+}
+
+.barbers-after-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  letter-spacing: 0.02em;
+  
+  color: var(--primary-title-color);
+}
+
+.barbers-text {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  letter-spacing: 0.02em;
+  
+  color: var(--accent-color);
+}
 
 /* Portfolio */
+.portfolio-after-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+
+  color: var(--primary-title-color);
+}
 
 /* Booking */
+.booking-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  
+  color: var(--primary-white-color);
+}
 
 /* Contacts */
+.contacts-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  
+  color: var(--primary-white-color);
+}
+
+.contacts-list-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+}
+
+.contacts-link-map {
+  font-weight: 700;
+}
+
+.contacts-after-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+  
+  color: var(--primary-white-color);
+}
+
+.contacts-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  
+  color: var(--secondary-text-color);
+}
 
 /* Footer */
+.footer-copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+
+  color: var(--secondary-text-color);
+}
+
+.footer-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+
+  color: var(--primary-title-color);
+}
+
+.footer-list-link:hover,
+.footer-list-link:focus {
+  color: var(--accent-color);
+}
