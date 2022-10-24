@@ -11,9 +11,9 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Barbershop</title>
   </head>
@@ -22,38 +22,42 @@
     <!-- Header -->
     <header class="header">
       <div class="container flex-nav">
-          <a href="/" class="header-logo">
-            <img src="./images/logo.svg" alt="logo" class="header-logo-img" />
-          </a>
-          <nav class="header-nav">
-            <ul class="list header-list">
-              <li class="header-list-item">
-                <a href="#about" class="link header-list-link header-link">About</a>
-              </li>
-              <li class="header-list-item">
-                <a href="#services" class="link header-list-link header-link"
-                  >Services and prices</a
-                >
-              </li>
-              <li class="header-list-item">
-                <a href="#barbers" class="link header-list-link header-link"
-                  >Barbers</a
-                >
-              </li>
-              <li class="header-list-item">
-                <a href="#contacts" class="link header-list-link header-link"
-                  >Contacts</a
-                >
-              </li>
-            </ul>
-          </nav>
+        <a href="/" class="header-logo">
+          <img src="./images/logo.svg" alt="logo" class="header-logo-img" />
+        </a>
+        <nav class="header-nav">
+          <ul class="list header-list">
+            <li class="header-list-item">
+              <a href="#about" class="link header-list-link header-link"
+                >About</a
+              >
+            </li>
+            <li class="header-list-item">
+              <a href="#services" class="link header-list-link header-link"
+                >Services and prices</a
+              >
+            </li>
+            <li class="header-list-item">
+              <a href="#barbers" class="link header-list-link header-link"
+                >Barbers</a
+              >
+            </li>
+            <li class="header-list-item">
+              <a href="#contacts" class="link header-list-link header-link"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-          <div class="auth-nav">
-            <a href="tel:+380441111111" class="link header-tel-link header-link"
+        <div class="auth-nav">
+          <a href="tel:+380441111111" class="link header-tel-link header-link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="button header-button">Online-booking</button>
-          </div>        
+          <button type="button" class="button header-button">
+            Online-booking
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -84,8 +88,8 @@
             <p class="hero-pre-title">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
             <p class="hero-text">
-              We are experts in trendy men’s haircuts. We work quickly, carefully
-              and with style.
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
             </p>
           </div>
         </div>
@@ -93,89 +97,149 @@
 
       <!-- About -->
       <section id="about" class="about">
-        <div class="container">
+        <div class="container flex-about">
           <img
-          src="./images/about1.jpg"
-          alt="haircut1"
-          width="270"
-          class="about-img"
-        />
-        <img
-          src="./images/about2.jpg"
-          alt="haircut2"
-          width="270"
-          class="about-img"
-        />
-        <p class="about-pre-title">About</p>
-        <h1 class="about-title">
-          Best Barbershop in <br />
-          your city
-        </h1>
-        <p class="about-after-title">
-          If you want to add more confidence to your image, you should
-          definitely visit us.
-        </p>
-        <p class="about-text">
-          We are a team that never stops at what has been achieved and are
-          thirsty for changes. And when you fall into the hands of our master,
-          you will never be the same again. We are a team that is always "on the
-          same wave" with clients. Therefore, we are always ready to improve
-          everyone who comes to us!
-        </p>
-        <button type="button" class="button about-button">
-          Online-booking
-        </button>
+            class="about-img"
+            src="./images/about1.jpg"
+            alt="haircut1"
+            width="270"
+            class="about-img"
+          />
+          <img
+            class="about-img"
+            src="./images/about2.jpg"
+            alt="haircut2"
+            width="270"
+            class="about-img"
+          />
+          <div class="about-description">
+            <p class="about-pre-title">About</p>
+            <h1 class="about-title">
+              Best Barbershop in <br />
+              your city
+            </h1>
+            <p class="about-after-title">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="about-text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="button about-button">
+              Online-booking
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- Services and Prices -->
       <section id="services" class="services">
         <div class="container">
-          <p class="services-pre-title">Spend your time with the best masters</p>
+          <p class="services-pre-title">
+            Spend your time with the best masters
+          </p>
           <h2 class="services-title">Services and prices</h2>
-          <ul class="list services-list">
-            <li class="services-list-item">
-              <p class="services-text services-text-left">Men’s haircut</p>
-              <p class="services-text services-text-right">from 300 uah.</p>
-            </li>
-            <li class="services-list-item">
-              <p class="services-text services-text-left">Beard trim</p>
-              <p class="services-text services-text-right">from 300 uah.</p>
-            </li>
-            <li class="services-list-item">
-              <p class="services-text services-text-left">Mustache trim</p>
-              <p class="services-text services-text-right">from 200 uah.</p>
-            </li>
-            <li class="services-list-item">
-              <p class="services-text services-text-left">Straight razor shave</p>
-              <p class="services-text services-text-right">from 200 uah.</p>
-            </li>
-          </ul>
-  
-          <ul class="list services-list">
-            <li class="services-list-item">
-              <p class="services-text services-text-left">Trainee’s haircut</p>
-              <p class="services-text services-text-right">from 50 uah.</p>
-            </li>
-            <li class="services-list-item">
-              <p class="services-text services-text-left">
-                Haircut under the nozzle
-              </p>
-              <p class="services-text services-text-right">from 200 uah.</p>
-            </li>
-            <li class="services-list-item">
-              <p class="services-text services-text-left">
-                Children’s haircut (0-12 y.o.)
-              </p>
-              <p class="services-text services-text-right">from 300 uah.</p>
-            </li>
-            <li class="services-list-item">
-              <p class="services-text services-text-left">
-                Camouflage of gray hair
-              </p>
-              <p class="services-text services-text-right">from 200 uah.</p>
-            </li>
-          </ul>
+
+          <div class="flex-services">
+            <div class="services-list-left">
+              <ul class="list services-list">
+                <li class="services-list-item">
+                  <div class="services-description">
+                    <p class="services-text services-text-left">
+                      Men’s haircut
+                    </p>
+                    <p class="services-text services-text-right">
+                      from 300 uah.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="services-list-item">
+                  <div class="services-description">
+                    <p class="services-text services-text-left">Beard trim</p>
+                    <p class="services-text services-text-right">
+                      from 300 uah.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="services-list-item">
+                  <div class="services-description">
+                    <p class="services-text services-text-left">
+                      Mustache trim
+                    </p>
+                    <p class="services-text services-text-right">
+                      from 200 uah.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="services-list-item">
+                  <div class="services-description">
+                    <p class="services-text services-text-left">
+                      Straight razor shave
+                    </p>
+                    <p class="services-text services-text-right">
+                      from 200 uah.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="services-list-right">
+              <ul class="list services-list">
+                <li class="services-list-item">
+                  <div class="services-description">
+                    <p class="services-text services-text-left">
+                      Trainee’s haircut
+                    </p>
+                    <p class="services-text services-text-right">
+                      from 50 uah.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="services-list-item">
+                  <div class="services-description">
+                    <p class="services-text services-text-left">
+                      Haircut under the nozzle
+                    </p>
+                    <p class="services-text services-text-right">
+                      from 200 uah.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="services-list-item">
+                  <div class="services-description">
+                    <p class="services-text services-text-left">
+                      Children’s haircut (0-12 y.o.)
+                    </p>
+                    <p class="services-text services-text-right">
+                      from 300 uah.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="services-list-item">
+                  <div class="services-description">
+                    <p class="services-text services-text-left">
+                      Camouflage of gray hair
+                    </p>
+                    <p class="services-text services-text-right">
+                      from 200 uah.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <button type="button" class="button services-button">
             Online-booking
           </button>
@@ -188,10 +252,10 @@
           <p class="ratings-pre-title">Old traditional school</p>
           <h2 class="ratings-title">&#191;Why people come to us?</h2>
           <p class="ratings-after-title">
-            Only good things are said about us. But it's better to see and feel 1
-            time than read 10 times.
+            Only good things are said about us. But it's better to see and feel
+            1 time than read 10 times.
           </p>
-  
+
           <ul class="list ratings-list">
             <li class="ratings-list-item">
               <span class="ratings-number">600</span

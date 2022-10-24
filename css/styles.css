@@ -9,7 +9,9 @@
 }
 
 /* General styles */
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -48,7 +50,7 @@ body {
   background: transparent;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
-  
+
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -180,7 +182,7 @@ body {
 
 .hero-text {
   max-width: 360px;
-  
+
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
@@ -190,9 +192,21 @@ body {
 
 /* About */
 .about {
+  /* display: flex; */
   padding-top: 120px;
   padding-bottom: 120px;
+}
 
+.flex-about {
+  display: flex;
+}
+
+.about-img:not(:first-child) {
+  margin-left: 30px;
+}
+
+.about-description {
+  margin-left: 30px;
 }
 
 .about-pre-title {
@@ -234,9 +248,7 @@ body {
 
 .about-button {
   color: var(--primary-title-color);
-
   background-color: var(--primary-white-color);
-  border-color: var(--accent-color);
 }
 
 .about-button:hover,
@@ -245,7 +257,14 @@ body {
 }
 
 /* Services and Prices */
+.services {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .services-pre-title {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -255,6 +274,8 @@ body {
 }
 
 .services-title {
+  margin-bottom: 44px;
+
   font-size: 42px;
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
@@ -270,11 +291,39 @@ body {
   color: var(--secondary-text-color);
 }
 
-.services-button {
-  color: var(--primary-white-color);
+.flex-services {
+  display: flex;
+  margin-bottom: 44px;
+}
+.services-list-left {
+  width: 570px;
+}
 
+.services-list-right {
+  margin-left: 30px;
+  width: 570px;
+}
+
+.services-description {
+  display: flex;
+}
+
+.services-text-left {
+  margin-right: auto;
+  margin-left: 20px;
+}
+.services-text-right {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.services-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--primary-white-color);
   background-color: var(--primary-text-color);
-  border-color: var(--accent-color);
 }
 
 .services-button:hover,
