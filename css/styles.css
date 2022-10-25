@@ -342,12 +342,6 @@ img {
   padding-bottom: 120px;
 }
 
-/* .flex-benefits {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-right: auto;
-} */
-
 .benefits .pre-title {
   margin-bottom: 20px;
 
@@ -377,23 +371,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-/* .benefits-list {
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 370px;
-  flex-wrap: wrap;
-} */
-
-/* .benefits-list .item {
-  width: 170px;
-  margin: 0;
-} */
-
-/* .benefits-list .item:nth-child(2n) {
-  margin-left: 30px;
-} */
-
 .benefits .number {
   font-weight: 700;
   font-size: 42px;
@@ -404,6 +381,11 @@ img {
 }
 
 .sign {
+  display: inline-block;
+  padding-top: 15px;
+
+  vertical-align: top;
+
   font-weight: 600;
   font-size: 16px;
   line-height: calc(22 / 16);
@@ -415,12 +397,57 @@ img {
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
-  text-align: center;
+  /* text-align: center; */
 
   color: var(--primary-title-color);
+}
 
-  width: 122px;
-  height: 30px;
+.flex-benefits {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.text-side {
+  width: calc(50% - 15px);
+  margin-left: 30px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: calc(50% - 15px);
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.benefits-list .item {
+  width: 170px;
+  height: 133px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  text-align: center;
+  background-color: var(--secondary-background-color);
+}
+
+.benefits-list .item:nth-child(2n) {
+  margin-left: 30px;
+}
+
+.benefits-list .item:nth-child(-n + 2) {
+  margin-bottom: 30px;
+}
+
+.benefits-list .item:nth-child(2) {
+  margin-top: 35px;
+}
+
+.benefits-list .item:nth-child(3) {
+  margin-top: -35px;
 }
 
 /* Barbers */
