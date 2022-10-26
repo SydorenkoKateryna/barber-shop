@@ -103,9 +103,7 @@ img {
 /* Тимчасовий колір фону для наглядності */
 .page-header,
 .hero,
-.services,
-.booking,
-.contacts {
+.services {
   background-color: var(--primary-text-color);
 }
 
@@ -540,7 +538,22 @@ img {
   margin-left: 30px;
 }
 
+/* Booking + Contacts */
+.booking-contacts {
+  background-color: #191c26;
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.flex-book-cont {
+  display: flex;
+}
+
 /* Booking */
+.booking {
+  width: 50%;
+}
+
 .booking .title {
   font-size: 42px;
   line-height: calc(49 / 42);
@@ -550,12 +563,25 @@ img {
 }
 
 /* Contacts */
+.contacts {
+  width: 50%;
+  padding-left: 100px;
+}
+
 .contacts .title {
+  margin-bottom: 40px;
+
   font-size: 42px;
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
 
   color: var(--primary-white-color);
+}
+
+.contacts-list {
+  margin-bottom: 70px;
+
+  width: 270px;
 }
 
 .contacts .list-link {
@@ -573,6 +599,8 @@ img {
 }
 
 .contacts .after-title {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
