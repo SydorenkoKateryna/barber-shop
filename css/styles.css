@@ -102,7 +102,6 @@ img {
 
 /* Тимчасовий колір фону для наглядності */
 .page-header,
-.hero,
 .services {
   background-color: var(--primary-text-color);
 }
@@ -126,7 +125,7 @@ img {
   display: flex;
 }
 
-/* .header-list > .item:not(:first-child) {
+/* .header-list .item:not(:first-child) {
   margin-left: 30px;
 } */
 
@@ -145,9 +144,7 @@ img {
 }
 
 .auth-nav {
-  display: flex;
   margin-left: auto;
-  align-items: center;
 }
 
 .header-button {
@@ -158,6 +155,11 @@ img {
 }
 
 /* Hero */
+.hero-list {
+  width: 100px;
+  background-color: var(--primary-white-color);
+}
+
 .hero .list-link {
   font-weight: 600;
   font-size: 11px;
@@ -167,11 +169,21 @@ img {
   color: var(--primary-title-color);
 }
 
+.flex-hero {
+  display: flex;
+}
+
 .hero-description {
-  padding-top: 176px;
-  padding-left: 200px;
+  padding-top: 184px;
+  padding-left: 100px;
   padding-right: 50px;
-  padding-bottom: 210px;
+  padding-bottom: 208px;
+
+  /* Розширює елемент на всю пусту область */
+  flex-grow: 1;
+
+  /* Для наглядності */
+  background-color: #191c26;
 }
 
 .hero .pre-title {
@@ -303,8 +315,32 @@ img {
 .flex-services {
   display: flex;
   margin-bottom: 44px;
+  margin-left: -30px;
 }
-.services .list-left {
+
+.services-list {
+  width: calc((100% - 30px) / 2);
+  margin-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  /* Для наглядності */
+  border: 1px solid #191c26;
+}
+
+
+.services-list .item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list .item + .item {
+  margin-top: 20px;
+}
+
+/* .services .list-left {
   width: 570px;
 }
 
@@ -324,10 +360,10 @@ img {
 .services .text-right {
   margin-left: auto;
   margin-right: 20px;
-}
+} */
 
 .services-button {
-  display: flex;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 
@@ -480,13 +516,20 @@ img {
 
 .barbers-list {
   display: flex;
+  margin-left: -30px;
 }
 
-.barbers-list .item:not(:first-child) {
+/* .barbers-list .item:not(:first-child) {
   margin-left: 30px;
-}
+} */
+
+/* .barbers-list .item + .item {
+  margin-left: 30px;
+} */
 
 .barbers-list .item {
+  width: calc((100% - 2 * 30px) / 3);
+  margin-left: 30px;
   text-align: center;
 }
 
@@ -532,11 +575,16 @@ img {
 
 .portfolio-gallery {
   display: flex;
+  width: calc((100% - 3 * 30px) / 4);
+  margin-left: -30px;
 }
 
-.portfolio-img:not(:first-child) {
+.portfolio-gallery img {
   margin-left: 30px;
 }
+/* .portfolio-img:not(:first-child) {
+  margin-left: 30px;
+} */
 
 /* Booking + Contacts */
 .booking-contacts {
