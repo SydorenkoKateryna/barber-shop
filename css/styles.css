@@ -65,6 +65,8 @@ img {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   text-align: center;
+
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -98,6 +100,17 @@ img {
 .footer .list-link:hover,
 .footer .list-link:focus {
   color: var(--accent-color);
+}
+
+.pre-title::before {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+  vertical-align: middle;
+
+  background-color: var(--primary-title-color);
 }
 
 /* Тимчасовий колір фону для наглядності */
@@ -179,6 +192,12 @@ img {
   padding-right: 50px;
   padding-bottom: 208px;
 
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url("../images/hero-description-bg.jpg");
+
   /* Розширює елемент на всю пусту область */
   flex-grow: 1;
 
@@ -195,6 +214,10 @@ img {
   text-transform: uppercase;
 
   color: var(--extra-text-color);
+}
+
+.hero .pre-title::before {
+  background-color: rgba(157, 164, 189, 0.6);;
 }
 
 .hero .title {
@@ -281,6 +304,14 @@ img {
 .services {
   padding-top: 120px;
   padding-bottom: 120px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #111319;
+  background-image: url('../images/services-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .services .pre-title {
@@ -292,6 +323,10 @@ img {
   text-transform: uppercase;
 
   color: var(--extra-text-color);
+}
+
+.services .pre-title::before {
+  background-color: rgba(157, 164, 189, 0.6);;
 }
 
 .services .title {
@@ -325,11 +360,15 @@ img {
   padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
-
-  /* Для наглядності */
-  border: 1px solid #191c26;
 }
 
+.services-first {
+  background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services-second {
+  background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
 
 .services-list .item {
   display: flex;
@@ -340,35 +379,12 @@ img {
   margin-top: 20px;
 }
 
-/* .services .list-left {
-  width: 570px;
-}
-
-.services .list-right {
-  margin-left: 30px;
-  width: 570px;
-}
-
-.services-description {
-  display: flex;
-}
-
-.services .text-left {
-  margin-right: auto;
-  margin-left: 20px;
-}
-.services .text-right {
-  margin-left: auto;
-  margin-right: 20px;
-} */
-
 .services-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
 
   color: var(--primary-white-color);
-  background-color: var(--primary-text-color);
 }
 
 /* Benefits */
@@ -519,14 +535,6 @@ img {
   margin-left: -30px;
 }
 
-/* .barbers-list .item:not(:first-child) {
-  margin-left: 30px;
-} */
-
-/* .barbers-list .item + .item {
-  margin-left: 30px;
-} */
-
 .barbers-list .item {
   width: calc((100% - 2 * 30px) / 3);
   margin-left: 30px;
@@ -585,27 +593,40 @@ img {
 
 /* Booking + Contacts */
 .booking-contacts {
-  padding-top: 130px;
-  padding-bottom: 120px;
+  /* padding-top: 130px;
+  padding-bottom: 120px; */
 
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 
-
-  background-image: url('../images/Bg.svg');
-  background-repeat: no-repeat;
-  background-position: right;
   background-color: #191c26;
+  /* background-image: url('../images/contacts-bg.png'); */
+  /* background-repeat: no-repeat; */
+  /* background-position: right; */
 }
 
-.flex-booking-contacts {
+/* .flex-booking-contacts {
   display: flex;
+} */
+
+.flex-booking{
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Booking */
 .booking {
-  width: 50%;
+  /* width: 50%; */
+  width: 600px;
+  padding-top: 130px;
+  padding-bottom: 120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* margin-right: auto; */
+  margin-left: auto;
+
+  outline: 1px solid red;
 }
 
 .booking .title {
@@ -619,6 +640,9 @@ img {
 /* Contacts */
 .contacts {
   width: 50%;
+  background-image: url('../images/contacts-bg.png');
+  padding-top: 130px;
+  padding-bottom: 120px;
   padding-left: 100px;
 }
 
