@@ -138,10 +138,6 @@ img {
   display: flex;
 }
 
-/* .header-list .item:not(:first-child) {
-  margin-left: 30px;
-} */
-
 .header-list .item + .item {
   margin-left: 30px;
 }
@@ -191,18 +187,17 @@ img {
   padding-left: 100px;
   padding-right: 50px;
   padding-bottom: 208px;
+/* Розширює елемент на всю пусту область */
+  flex-grow: 1;
 
   background-image: linear-gradient(
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
     ),
     url("../images/hero-description-bg.jpg");
-
-  /* Розширює елемент на всю пусту область */
-  flex-grow: 1;
-
-  /* Для наглядності */
-  background-color: #191c26;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #191c26;
 }
 
 .hero .pre-title {
@@ -593,37 +588,27 @@ img {
 
 /* Booking + Contacts */
 .booking-contacts {
-  /* padding-top: 130px;
-  padding-bottom: 120px; */
-
+  display: flex;
+  justify-content: space-between;
   max-width: 1600px;
+  height: 634px;
+
   margin-left: auto;
   margin-right: auto;
 
   background-color: #191c26;
-  /* background-image: url('../images/contacts-bg.png'); */
-  /* background-repeat: no-repeat; */
-  /* background-position: right; */
-}
-
-/* .flex-booking-contacts {
-  display: flex;
-} */
-
-.flex-booking{
-  display: flex;
-  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 /* Booking */
 .booking {
-  /* width: 50%; */
+  width: 50%;
   width: 600px;
   padding-top: 130px;
   padding-bottom: 120px;
   padding-left: 15px;
   padding-right: 15px;
-  /* margin-right: auto; */
   margin-left: auto;
 
   outline: 1px solid red;
@@ -641,6 +626,7 @@ img {
 .contacts {
   width: 50%;
   background-image: url('../images/contacts-bg.png');
+  
   padding-top: 130px;
   padding-bottom: 120px;
   padding-left: 100px;
