@@ -72,7 +72,7 @@
                   >Instagram</a
                 >
               </li>
-  
+
               <li class="item">
                 <a
                   href="#"
@@ -245,18 +245,18 @@
                 />
                 <div class="barber-description">
                   <p class="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Atque, doloremque! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Ex quis molestias animi itaque voluptates
-                  incidunt illo esse. Repellendus sed repellat illum dignissimos
-                  neque numquam velit impedit, eligendi, in laudantium harum,
-                  nulla omnis rem itaque ipsa hic obcaecati quam esse?
-                  Reprehenderit dolore laborum corrupti assumenda ut placeat
-                  perspiciatis minus at et?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Atque, doloremque! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ex quis molestias animi itaque voluptates
+                    incidunt illo esse. Repellendus sed repellat illum
+                    dignissimos neque numquam velit impedit, eligendi, in
+                    laudantium harum, nulla omnis rem itaque ipsa hic obcaecati
+                    quam esse? Reprehenderit dolore laborum corrupti assumenda
+                    ut placeat perspiciatis minus at et?
                   </p>
                 </div>
               </div>
-              
+
               <h3 class="barber-name">John Smith</h3>
               <p class="barber-position">Extreme Barber</p>
               <ul class="social-icons list">
@@ -415,6 +415,39 @@
         <!-- Booking -->
         <section class="booking">
           <h2 class="title second-title">Online-booking</h2>
+          <form name="form-booking" class="form-booking">
+            <div class="form-field user-data">
+              <label for="user-name" class="form-label">Name<sup>*</sup></label>
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Enter Name"
+                class="form-input"
+              />
+              <label for="user-tel" class="form-label">Phone<sup>*</sup></label>
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="Enter Phone"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="form-field user-message">
+              <label for="user-message" class="form-label">Message</label>
+              <textarea
+                name="user-message"
+                id="user-message"
+                placeholder="Left Message"
+                class="form-input"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="button form-button">Send</button>
+          </form>
         </section>
 
         <!-- Contacts -->
