@@ -727,59 +727,127 @@ img {
   color: var(--primary-white-color);
 }
 
-.form-booking {
+/* .form-booking {
   width: 570px;
 }
-
 .form-field {
   margin-bottom: 44px;
 }
-
 .form-label {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.37;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: rgba(157, 164, 189, 0.4);
 }
-
 .form-input {
   margin: 0;
   padding: 0;
-
   font-weight: 600;
   font-size: 11px;
   line-height: 1.37;
   letter-spacing: 0.1em;
-
   color: var(--primary-white-color);
   background-color: transparent;
   border: 1px solid transparent;
 }
-
 .form-input {
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 }
-
 .user-data {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
 .user-message {
   display: flex;
   flex-direction: column;
 }
-
 .user-data .form-input {
   height: 24px;
   width: 210px;
 }
-
 .user-message .form-input {
   height: 76px;
+  resize: none;
+} */
+
+.form-booking {
+  width: 570px;
+}
+
+.form-booking .user-data {
+  display: flex;
+
+  margin-bottom: 44px;
+}
+
+.form-field {
+  position: relative;
+  display: block;
+}
+
+.form-input {
+  padding: 0;
+  margin: 0;
+
+  border: 1px solid transparent;
+  border-bottom-color:rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+
+  cursor: pointer;
+}
+
+.form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--extra-text-color);
+
+  cursor: pointer;
+}
+
+.form-field:hover .form-label {
+  color: var(--primary-white-color);
+}
+
+.form-field:hover .form-input {
+  border-bottom-color: var(--primary-white-color);
+}
+
+.user-data .form-input {
+  width: 270px;
+  height: 24px;
+  padding-left: 62px;
+  padding-bottom: 9px;
+}
+
+.user-data .form-field + .form-field {
+  margin-left: 30px;
+}
+
+.user-message .form-input {
+  width: 100%;
+  height: 76px;
+  margin-bottom: 44px;
+  padding-top: 27px;
+
   resize: none;
 }
 

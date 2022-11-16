@@ -416,35 +416,37 @@
         <section class="booking">
           <h2 class="title second-title">Online-booking</h2>
           <form name="form-booking" class="form-booking">
-            <div class="form-field user-data">
-              <label for="user-name" class="form-label">Name<sup>*</sup></label>
-              <input
-                type="text"
-                name="user-name"
-                id="user-name"
-                placeholder="Enter Name"
-                class="form-input"
-              />
-              <label for="user-tel" class="form-label">Phone<sup>*</sup></label>
-              <input
-                type="tel"
-                name="user-tel"
-                id="user-tel"
-                placeholder="Enter Phone"
-                class="form-input"
-                required
-              />
+            <div class="user-data">
+              <label class="form-field">
+                <input
+                  type="text"
+                  name="user-name"
+                  placeholder=" "
+                  class="form-input"
+                />
+                <span class="form-label">Name<sup>*</sup></span>
+              </label>
+              <label class="form-field">
+                <input
+                  type="tel"
+                  name="user-tel"
+                  placeholder=" "
+                  class="form-input"
+                  required
+                />
+                <span class="form-label">Phone<sup>*</sup></span>
+              </label>
             </div>
 
-            <div class="form-field user-message">
-              <label for="user-message" class="form-label">Message</label>
+            <label class="form-field user-message">
               <textarea
                 name="user-message"
                 id="user-message"
-                placeholder="Left Message"
+                placeholder=" "
                 class="form-input"
               ></textarea>
-            </div>
+              <span class="form-label">Message<br></span>
+            </label>
 
             <button type="submit" class="button form-button">Send</button>
           </form>
