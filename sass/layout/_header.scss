@@ -1,0 +1,54 @@
+.page-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: absolute;
+  width: 100%;
+}
+
+.flex-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  margin-left: 131px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list .item + .item {
+  margin-left: 30px;
+}
+
+.header-link,
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: $primaryWhiteColor;
+}
+
+.auth-nav {
+  margin-left: auto;
+}
+
+.header-button {
+  margin-left: 40px;
+  margin-right: 20px;
+
+  color: $primaryWhiteColor;
+  background-color: $primaryTextColor;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus,
+.header-button:hover,
+.header-button:focus {
+  color: $accentColor;
+}

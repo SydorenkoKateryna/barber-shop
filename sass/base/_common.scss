@@ -1,0 +1,23 @@
+.page-body {
+  font-family: $primaryFont;
+  color: $primaryTextColor;
+  background-color: $primaryWhiteColor;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}

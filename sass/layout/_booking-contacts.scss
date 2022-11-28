@@ -1,0 +1,107 @@
+.booking-contacts {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  height: 634px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #191c26;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.booking {
+  width: 50%;
+  width: 600px;
+  padding-top: 130px;
+  padding-bottom: 120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+}
+
+.booking .title {
+  margin-bottom: 44px;
+
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+
+  color: $primaryWhiteColor;
+}
+
+.contacts {
+  width: 50%;
+  background-image: url("../images/contacts-bg.png");
+
+  padding-top: 130px;
+  padding-bottom: 120px;
+  padding-left: 100px;
+}
+
+.contacts .title {
+  margin-bottom: 40px;
+
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+
+  color: $primaryWhiteColor;
+}
+
+.contacts-list {
+  margin-bottom: 70px;
+
+  width: 270px;
+}
+
+.contacts .list-link {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: $secondaryTextColor;
+}
+
+.contacts .list-link:hover,
+.contacts .list-link:focus {
+  color: $accentColor;
+}
+
+.contacts .icon {
+  margin-right: 16px;
+  fill: none;
+  stroke: currentColor;
+}
+
+.contacts .link-map {
+  font-weight: 700;
+}
+
+.contacts .after-title {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+
+  color: $primaryWhiteColor;
+}
+
+.contacts-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: $secondaryTextColor;
+}

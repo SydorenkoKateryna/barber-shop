@@ -1,0 +1,42 @@
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer .copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+
+  color: $secondaryTextColor;
+}
+
+.footer .list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+
+  color: $primaryTitleColor;
+}
+
+.footer .list-link:hover,
+.footer .list-link:focus {
+  color: $accentColor;
+}
+
+.flex-footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.footer-list .item + .item {
+  margin-left: 40px;
+}

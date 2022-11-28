@@ -1,0 +1,86 @@
+.form-booking {
+  width: 570px;
+}
+
+.form-booking .user-data {
+  display: flex;
+
+  margin-bottom: 44px;
+}
+
+.form-field {
+  position: relative;
+  display: block;
+}
+
+.form-input {
+  padding: 0;
+  margin: 0;
+
+  border: 1px solid transparent;
+  border-bottom-color: rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $primaryWhiteColor;
+
+  cursor: pointer;
+}
+
+.form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $extraTextColor;
+
+  cursor: pointer;
+}
+
+.form-field:hover .form-label {
+  color: $primaryWhiteColor;
+}
+
+.form-field:hover .form-input {
+  border-bottom-color: $primaryWhiteColor;
+}
+
+.user-data .form-input {
+  width: 270px;
+  height: 24px;
+  padding-left: 62px;
+  padding-bottom: 9px;
+}
+
+.user-data .form-field + .form-field {
+  margin-left: 30px;
+}
+
+.user-message .form-input {
+  width: 100%;
+  height: 76px;
+  margin-bottom: 44px;
+  padding-top: 27px;
+
+  resize: none;
+}
+
+.form-button {
+  color: $primaryWhiteColor;
+}
+
+.form-button:hover,
+.form-button:focus {
+  color: $accentColor;
+}
