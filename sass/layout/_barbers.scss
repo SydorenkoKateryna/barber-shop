@@ -6,22 +6,22 @@
 
   &__pre-title {
     margin-bottom: 20px;
-  
+
     font-weight: 600;
     font-size: 11px;
     line-height: calc(15 / 11);
     text-transform: uppercase;
-  
+
     color: $primaryTitleColor;
   }
-  
+
   &__title {
     margin-bottom: 44px;
-  
+
     font-size: 42px;
     line-height: calc(49 / 42);
     letter-spacing: 0.05em;
-  
+
     color: $primaryTitleColor;
   }
 
@@ -44,38 +44,38 @@
 
   &__title {
     margin-bottom: 8px;
-  
+
     font-weight: 400;
     font-size: 18px;
     line-height: calc(25 / 18);
     letter-spacing: 0.02em;
-  
+
     color: $primaryTitleColor;
   }
 
   &__text {
     margin-bottom: 30px;
-  
+
     font-size: 14px;
     line-height: calc(19 / 14);
     letter-spacing: 0.02em;
-  
+
     color: $accentColor;
   }
 }
 
-
 .soc-barbers {
+  display: flex;
+  justify-content: center;
+
   &__item + &__item {
     margin-left: 10px;
   }
-}
-.barbers .social-icons {
-  display: flex;
-  justify-content: center;
-}
 
-
+  &__icon {
+    fill: currentColor;
+  }
+}
 
 .soc-barbers__link {
   width: 100%;
@@ -91,13 +91,7 @@
   background-color: $primaryWhiteColor;
 
   &:hover,
-&:focus {
-  color: $accentColor;
-}
-}
-
-
-
-.barbers .social-icon {
-  fill: currentColor;
+  &:focus {
+    color: $accentColor;
+  }
 }
