@@ -1,14 +1,53 @@
 .services {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  max-width: 1600px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 480px;
 
   background-color: #111319;
-  background-image: url("../images/services-bg.png");
+  background-image: url("../images/prices/img-480.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url("../images/prices/img-960.png");
+  }
+
+  @media screen and (min-width: 481px) {
+    max-width: 768px;
+    background-image: url("../images/prices/img-768.png");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../images/prices/img-1536.png");
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 769px) {
+    max-width: 1600px;
+    background-image: url("../images/prices/img-1600.png");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../images/prices/img-3200.png");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 
   &__pre-title {
     margin-bottom: 20px;
@@ -24,33 +63,39 @@
   &__title {
     margin-bottom: 44px;
 
-    font-size: 42px;
-    line-height: calc(49 / 42);
+    font-size: 40px;
+    line-height: calc(47 / 40);
     letter-spacing: 0.05em;
 
     color: $primaryWhiteColor;
-  }
 
-  &__wrapper {
-    display: flex;
-    margin-bottom: 44px;
-    margin-left: -30px;
+    @media screen and (min-width: 768px) {
+      font-size: 42px;
+      line-height: calc(49 / 42);
+    }
   }
 }
 
-.services__line::before {
+.services__pre-title::before {
+  @extend %linePreTitle;
   background-color: rgba(157, 164, 189, 0.6);
 }
 
-.services__list {
-  width: calc((100% - 30px) / 2);
-  margin-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+.services__wrapper {
+  margin-bottom: 44px;
 
-  &--first {
+  @media screen and (max-width: 767.98px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 34px;
+    padding-right: 34px;
     background-image: linear-gradient(
       180deg,
       #171a24 0%,
@@ -58,12 +103,44 @@
     );
   }
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: -30px;
+  }
+}
+
+.services__list {
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px) / 2);
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &--first {
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.2) 100%
+      );
+    }
+  }
+
   &--second {
-    background-image: linear-gradient(
-      180deg,
-      #090b13 0%,
-      rgba(9, 11, 19, 0.2) 100%
-    );
+    @media screen and (max-width: 1199.98px) {
+      margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(
+        180deg,
+        #090b13 0%,
+        rgba(9, 11, 19, 0.2) 100%
+      );
+    }
   }
 }
 
@@ -76,11 +153,16 @@
   }
 
   &__text {
-    font-size: 18px;
-    line-height: calc(30 / 18);
+    font-size: 14px;
+    line-height: calc(20 / 14);
     letter-spacing: 0.02em;
 
     color: $secondaryTextColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: calc(30 / 18);
   }
 }
 
@@ -96,3 +178,18 @@
     color: $accentColor;
   }
 }
+
+// Подумати ще з лінією між текстом !!!!!!!
+
+// .text-right::before {
+//   content: "";
+//   display: inline-flex;
+//   height: 1px;
+  
+//   width: 100%;
+//   margin-right: 12px;
+//   margin-left: 12px;
+//   vertical-align: baseline;
+
+//   background-color: rgba(157, 164, 189, 0.12);
+// }
