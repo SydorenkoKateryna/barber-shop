@@ -12,7 +12,7 @@
   margin: -1px;
 }
 
-.barbers__pre-title::before, .benefits__pre-title::before, .services__pre-title::before, .about__pre-title::before {
+.portfolio .portfolio__pre-title::before, .barbers__pre-title::before, .benefits__pre-title::before, .services__pre-title::before, .about__pre-title::before {
   content: "";
   display: inline-block;
   height: 1px;
@@ -856,26 +856,69 @@ img {
 }
 
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 .portfolio__pre-title {
-  margin-bottom: 44px;
+  margin-bottom: 71px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636363636;
   text-transform: uppercase;
   color: #303030;
 }
-.portfolio__gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: calc((100% - 90px) / 4);
-  margin-left: -30px;
+@media screen and (min-width: 768px) {
+  .portfolio__pre-title {
+    margin-bottom: 44px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .portfolio__gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__gallery {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .portfolio__img {
-  margin-left: 30px;
+  display: block;
+}
+@media screen and (max-width: 767.98px) {
+  .portfolio__img:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__img {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__img {
+    width: calc((100% - 120px) / 4);
+  }
 }
 
 .booking-contacts {
