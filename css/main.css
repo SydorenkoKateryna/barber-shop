@@ -524,6 +524,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 .item-services + .item-services {
   margin-top: 20px;
@@ -549,6 +552,23 @@ img {
 }
 .services-button:hover, .services-button:focus {
   color: #ff6c00;
+}
+
+.item-services::after {
+  content: "";
+  height: 1px;
+  margin-right: 12px;
+  margin-left: 12px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.text-right {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 .benefits {

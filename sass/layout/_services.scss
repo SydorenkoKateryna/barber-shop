@@ -147,6 +147,7 @@
 .item-services {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 
   & + & {
     margin-top: 20px;
@@ -179,17 +180,16 @@
   }
 }
 
-// Подумати ще з лінією між текстом !!!!!!!
+.item-services::after {
+  content: "";
+  height: 1px;
+  margin-right: 12px;
+  margin-left: 12px;
+  flex-grow: 1;
 
-// .text-right::before {
-//   content: "";
-//   display: inline-flex;
-//   height: 1px;
-  
-//   width: 100%;
-//   margin-right: 12px;
-//   margin-left: 12px;
-//   vertical-align: baseline;
+  background-color: rgba(157, 164, 189, 0.12);
+}
 
-//   background-color: rgba(157, 164, 189, 0.12);
-// }
+.text-right {
+  order: 3;
+}
