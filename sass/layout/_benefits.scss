@@ -106,6 +106,10 @@
   }
 }
 
+.benefits__pre-title::before {
+  @extend %linePreTitle;
+}
+
 .item-benefits {
   &__number {
     font-weight: 700;

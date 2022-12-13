@@ -1,6 +1,16 @@
 .barbers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 
   background-color: $secondaryBackgroundColor;
 
@@ -11,35 +21,64 @@
     font-size: 11px;
     line-height: calc(15 / 11);
     text-transform: uppercase;
-
     color: $primaryTitleColor;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__title {
     margin-bottom: 44px;
 
+    font-family: "Raleway";
     font-size: 42px;
     line-height: calc(49 / 42);
     letter-spacing: 0.05em;
-
     color: $primaryTitleColor;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__list {
-    display: flex;
-    margin-left: -30px;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin: -15px;
+    }
   }
 
   &__item {
-    width: calc((100% - 2 * 30px) / 3);
-    margin-left: 30px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
+    }
   }
 }
 
+.barbers__pre-title::before {
+  @extend %linePreTitle;
+}
+
 .item-barbers {
+  &:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
   &__img {
     margin-bottom: 30px;
+
+    @media screen and (max-width: 1199.98px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__title {
@@ -49,7 +88,6 @@
     font-size: 18px;
     line-height: calc(25 / 18);
     letter-spacing: 0.02em;
-
     color: $primaryTitleColor;
   }
 
@@ -59,7 +97,6 @@
     font-size: 14px;
     line-height: calc(19 / 14);
     letter-spacing: 0.02em;
-
     color: $accentColor;
   }
 }

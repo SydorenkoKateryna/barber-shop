@@ -12,7 +12,7 @@
   margin: -1px;
 }
 
-.services__pre-title::before, .about__pre-title::before {
+.barbers__pre-title::before, .benefits__pre-title::before, .services__pre-title::before, .about__pre-title::before {
   content: "";
   display: inline-block;
   height: 1px;
@@ -726,9 +726,21 @@ img {
 }
 
 .barbers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   background-color: #f7f7f7;
+}
+@media screen and (min-width: 768px) {
+  .barbers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 .barbers__pre-title {
   margin-bottom: 20px;
@@ -738,27 +750,57 @@ img {
   text-transform: uppercase;
   color: #303030;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .barbers__pre-title {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .barbers__title {
   margin-bottom: 44px;
+  font-family: "Raleway";
   font-size: 42px;
   line-height: 1.1666666667;
   letter-spacing: 0.05em;
   color: #303030;
 }
-.barbers__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -30px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .barbers__title {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -15px;
+  }
 }
 .barbers__item {
-  width: calc((100% - 60px) / 3);
-  margin-left: 30px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .barbers__item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
 
+.item-barbers:not(:last-child) {
+  margin-bottom: 64px;
+}
 .item-barbers__img {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1199.98px) {
+  .item-barbers__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .item-barbers__title {
   margin-bottom: 8px;
