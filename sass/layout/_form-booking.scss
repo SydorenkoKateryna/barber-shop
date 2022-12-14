@@ -1,22 +1,37 @@
 .form-booking {
-  width: 570px;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
 
   &__wrapper {
-    display: flex;
     margin-bottom: 44px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 }
 
 .form-booking__field {
   display: block;
 
-  & + & {
-    margin-left: 30px;
+  @media screen and (max-width: 767.98px) {
+    &:first-child {
+      margin-bottom: 44px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:first-child {
+      margin-right: 30px;
+    }
   }
 }
 
 .form-booking__input {
-  width: 270px;
+  width: 100%;
   height: 24px;
   padding: 0 8px 8px 0;
   margin: 0;
@@ -30,8 +45,15 @@
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: $primaryWhiteColor;
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 
   &:focus {
     border-bottom-color: $primaryWhiteColor;
@@ -44,7 +66,6 @@
     line-height: calc(15 / 11);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-
     color: $extraTextColor;
   }
 
@@ -57,11 +78,16 @@
   width: 100%;
   height: 76px;
   margin-bottom: 44px;
-
   resize: none;
 }
 
 .form-button {
+  @media screen and (max-width: 767.98px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   color: $primaryWhiteColor;
 
   &:hover,

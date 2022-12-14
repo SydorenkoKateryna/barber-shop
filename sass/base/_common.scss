@@ -36,3 +36,21 @@
     padding-right: 15px;
   }
 }
+
+.booking__container {
+  @media screen and (min-width: 1200px) {
+    width: 615px;
+    padding-left: 15px;
+    padding-right: 30px;
+    margin-right: 0;
+  }
+}
+
+.contacts__container {
+  @media screen and (min-width: 1200px) {
+    width: 585px;
+    padding-left: 100px;
+    padding-right: 15px;
+    margin-left: 0;
+  }
+}
