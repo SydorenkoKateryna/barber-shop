@@ -1,10 +1,24 @@
 .footer {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 
   &__wrapper {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767.98px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row-reverse;
+    }
   }
 
   &__text {
@@ -12,19 +26,31 @@
     font-size: 11px;
     line-height: calc(15 / 11);
     letter-spacing: 0.2em;
-
     color: $secondaryTextColor;
   }
 
   &__list {
     display: flex;
-    margin-left: auto;
     align-items: center;
+
+    @media screen and (max-width: 767.98px) {
+      flex-basis: 100%;
+      justify-content: flex-end;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+    }
   }
 
   &__item + &__item {
     margin-left: 40px;
   }
+}
+
+.footer__list::before {
+  @extend %linePreTitle;
+  margin-right: 40px;
 }
 
 .item-footer__link {
