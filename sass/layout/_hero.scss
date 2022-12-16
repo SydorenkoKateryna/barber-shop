@@ -1,8 +1,14 @@
 .soc-hero {
-  width: 100px;
-  display: flex;
-  align-items: flex-end;
-  padding-left: 25px;
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 25px;
+  }
 }
 
 .soc-hero__list {
@@ -33,7 +39,6 @@
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
-
   color: $primaryTitleColor;
 
   &:hover,
@@ -44,7 +49,9 @@
 
 .hero {
   &__wrapper {
-    display: flex;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__description {
@@ -52,16 +59,66 @@
     padding-left: 100px;
     padding-right: 50px;
     padding-bottom: 208px;
-    flex-grow: 1;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #191c26;
 
     background-image: linear-gradient(
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url("../images/hero-description-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #191c26;
+      url("../images/hero/img3-480.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url("../images/hero/img3-960.jpg");
+    }
+
+    @media screen and (min-width: 481px) {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url("../images/hero/img3-570.jpg");
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2),
+            rgba(25, 28, 38, 0.2)
+          ),
+          url("../images/hero/img3-1140.jpg");
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-grow: 1;
+    }
+
+    @media screen and (min-width: 769px) {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url("../images/hero/img3-1070.jpg");
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2),
+            rgba(25, 28, 38, 0.2)
+          ),
+          url("../images/hero/img3-2140.jpg");
+      }
+    }
   }
 
   &__pre-title {
@@ -71,7 +128,6 @@
     font-size: 11px;
     line-height: calc(15 / 11);
     text-transform: uppercase;
-
     color: $extraTextColor;
   }
 
@@ -81,7 +137,6 @@
     font-size: 72px;
     line-height: calc(85 / 72);
     letter-spacing: 0.05em;
-
     color: $primaryWhiteColor;
   }
 
@@ -91,11 +146,11 @@
     font-size: 18px;
     line-height: calc(30 / 18);
     letter-spacing: 0.02em;
-
     color: $secondaryTextColor;
   }
 }
 
-.hero__line::before {
+.hero__pre-title::before {
+  @extend %linePreTitle;
   background-color: rgba(157, 164, 189, 0.6);
 }
