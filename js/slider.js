@@ -56,4 +56,4 @@ lines.forEach((item, indexLine) => {
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
-const interval = setInterval(nextSlide, 3000);
+const interval = setInterval(nextSlide, 2500);
