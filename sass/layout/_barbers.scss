@@ -126,6 +126,7 @@
 
   color: $primaryTitleColor;
   background-color: $primaryWhiteColor;
+  transition: color 250ms $cubicBezier;
 
   &:hover,
   &:focus {

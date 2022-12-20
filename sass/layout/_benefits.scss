@@ -93,7 +93,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
     background-color: $secondaryBackgroundColor;
   }
 
@@ -116,7 +116,6 @@
     font-size: 42px;
     line-height: calc(57 / 42);
     letter-spacing: 0.05em;
-
     color: $primaryTitleColor;
   }
 
@@ -127,7 +126,6 @@
     font-size: 16px;
     line-height: calc(22 / 16);
     vertical-align: super;
-
     color: $accentColor;
   }
 
@@ -138,7 +136,6 @@
     font-size: 11px;
     line-height: calc(15 / 11);
     text-align: center;
-
     color: $primaryTitleColor;
   }
 }

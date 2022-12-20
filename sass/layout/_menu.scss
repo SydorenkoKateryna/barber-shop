@@ -82,10 +82,12 @@
   line-height: calc(25 / 18);
   letter-spacing: 0.1em;
   color: $primaryTitleColor;
-}
+  transition: color 250ms $cubicBezier;
 
-.mobile-menu__link--current {
-  color: $accentColor;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .mobile-contacts {
@@ -100,10 +102,17 @@
   line-height: calc(25 / 18);
   letter-spacing: 0.1em;
   color: $primaryTitleColor;
+  transition: color 250ms $cubicBezier;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .mobile-contacts__button {
   min-width: 194px;
+  transition: color 250ms $cubicBezier;
 
   &:hover,
   &:focus {
@@ -144,4 +153,10 @@
   line-height: calc(19 / 14);
   letter-spacing: 0.2em;
   color: $primaryTitleColor;
+  transition: color 250ms $cubicBezier;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }

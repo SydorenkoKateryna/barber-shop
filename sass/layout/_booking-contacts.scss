@@ -154,6 +154,7 @@
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: $secondaryTextColor;
+  transition: color 250ms $cubicBezier;
 
   &:hover,
   &:focus {

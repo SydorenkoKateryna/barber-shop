@@ -7,16 +7,21 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
-  padding-bottom: 32px;
+    padding-bottom: 32px;
   }
 
   &__wrapper {
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px){
+      align-items: flex-start;
+    }
   }
 }
 
 .logo {
+  padding-left: 11px;
   color: $primaryWhiteColor;
 
   @media screen and (min-width: 768px) {
@@ -34,6 +39,10 @@
   @media screen and (min-width: 768px) {
     display: block;
     margin-left: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px){
+    padding-top: 16px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -64,14 +73,21 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-
     margin-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px){
+    padding-top: 7px;
   }
 
   @media screen and (max-width: 1199.98px) {
     flex-wrap: wrap;
-    max-width: 160px;
+    max-width: 165px;
     justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row-reverse;
   }
 }
 
@@ -82,6 +98,7 @@
   line-height: calc(16 / 12);
   letter-spacing: 0.1em;
   color: $primaryWhiteColor;
+  transition: color 250ms $cubicBezier;
 
   &:hover,
   &:focus {
@@ -90,9 +107,16 @@
 }
 
 .header-button {
-  margin-left: 40px;
-  // margin-right: 20px;
   color: $primaryWhiteColor;
+  transition: color 250ms $cubicBezier;
+
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 40px;
+  }
 
   &:hover,
   &:focus {

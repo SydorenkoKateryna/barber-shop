@@ -125,6 +125,7 @@
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
   color: $primaryTitleColor;
+  transition: color 250ms $cubicBezier;
 
   &:hover,
   &:focus {

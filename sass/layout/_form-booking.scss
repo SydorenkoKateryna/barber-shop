@@ -46,6 +46,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $primaryWhiteColor;
+  transition: border-bottom-color 250ms $cubicBezier,  outline 250ms $cubicBezier;
 
   @media screen and (min-width: 768px) {
     width: 330px;
@@ -67,6 +68,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $extraTextColor;
+    transition: color 250ms $cubicBezier;
   }
 
   &:focus::placeholder {
@@ -89,6 +91,7 @@
   }
 
   color: $primaryWhiteColor;
+  transition: color 250ms $cubicBezier;
 
   &:hover,
   &:focus {
