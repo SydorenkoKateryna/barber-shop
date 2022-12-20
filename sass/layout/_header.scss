@@ -1,8 +1,14 @@
 .page-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: absolute;
   width: 100%;
+  z-index: 999;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  padding-bottom: 32px;
+  }
 
   &__wrapper {
     display: flex;
@@ -10,29 +16,71 @@
   }
 }
 
+.logo {
+  color: $primaryWhiteColor;
+
+  @media screen and (min-width: 768px) {
+    color: $primaryTitleColor;
+  }
+}
+
+.logo__icon {
+  fill: currentColor;
+}
+
 .nav {
-  margin-left: 131px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 131px;
+  }
 
   &__list {
-    display: flex;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__item + &__item {
-    margin-left: 30px;
+    @media screen and (min-width: 768px) {
+      margin-left: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
   }
 }
 
 .auth-nav {
-  margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    flex-wrap: wrap;
+    max-width: 160px;
+    justify-content: flex-end;
+  }
 }
 
 .item-nav__link,
 .auth-nav__link {
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: calc(16 / 12);
   letter-spacing: 0.1em;
-
   color: $primaryWhiteColor;
 
   &:hover,
@@ -43,8 +91,7 @@
 
 .header-button {
   margin-left: 40px;
-  margin-right: 20px;
-
+  // margin-right: 20px;
   color: $primaryWhiteColor;
 
   &:hover,

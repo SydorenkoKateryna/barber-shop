@@ -20,10 +20,15 @@
 
   <body class="page-body">
     <!-- Header -->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container page-header__wrapper">
+        <!-- !!!Change logo into svg format!!! -->
+        
         <a href="/" class="logo">
-          <img src="./images/logo.svg" alt="logo" class="logo__img" />
+          <!-- <img src="./images/logo.svg" alt="logo" class="logo__img" /> -->
+          <svg class="logo__icon" width="69" height="55">
+            <use href="./images/logo.svg#logo"></use>
+          </svg>
         </a>
         <nav class="nav">
           <ul class="list nav__list">
@@ -55,8 +60,18 @@
             Online-booking
           </button>
         </div>
+
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="./images/mobile-icons.svg#open-mobile-menu"></use>
+        </svg>
+      </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Hero -->
       <section class="hero">
@@ -812,6 +827,61 @@
       </div>
     </footer>
 
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle menu-container__toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="./images/mobile-icons.svg#close-mobile-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu__item">
+          <a href="" class="link mobile-menu__link mobile-menu__link--current"
+            >About</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="link mobile-menu__link"
+            >Services and prices</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="link mobile-menu__link">Barbers</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="link mobile-menu__link">Contacts</a>
+        </li>
+      </ul>
+
+
+      <div class="mobile-contacts">
+        <a href="tel:+380441111111" class="link mobile-contacts__link"
+          >+38 044 111 11 11</a
+        >
+        <button type="button" class="button mobile-contacts__button">
+          Online-booking
+        </button>
+      </div>
+
+      <ul class="soc-mobile list">
+        <li class="soc-mobile__item">
+          <a href="" class="soc-mobile__link link">Instagram</a>
+        </li>
+        <li class="soc-mobile__item">
+          <a href="" class="soc-mobile__link link">Youtube</a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/slider.js"></script>
+    
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
