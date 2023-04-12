@@ -2,14 +2,21 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  min-height: 435px;
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
+    height: 580px;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    background-color: $primaryTextColor;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     max-width: 690px;
+    height: 680px;
   }
 
   @media screen and (min-width: 1200px) {
