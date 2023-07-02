@@ -1,0 +1,84 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transition: opacity 250ms $cubicBezier, visibility 250ms $cubicBezier;
+  background-color: $backdropBackgroundColor;
+
+  z-index: 100000;
+  overflow-y: scroll;
+
+  &--hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-height: calc(100vh - 80px);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms $cubicBezier;
+
+  border-radius: 4px;
+  background-color: $primaryWhiteColor;
+  box-shadow: $modalBoxShadow;
+  border-radius: 4px;
+  overflow-y: auto;
+
+  @media screen and (max-width: 1199.98px) {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    width: 100%;
+    max-height: calc(100vh - 40px);
+  }
+
+  .backdrop--hidden & {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+.modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border-color: $modalButtonBorder;
+  color: $primaryBlackColor;
+  background-color: $primaryWhiteColor;
+  transition: color 250ms $cubicBezier;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
